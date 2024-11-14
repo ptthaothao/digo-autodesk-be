@@ -7,7 +7,7 @@ let app = express();
 // app.use(express.static("wwwroot"));
 app.use(
   cors({
-    origin: "*",
+    origin: ["*"],
     credentials: true,
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     preflightContinue: true
