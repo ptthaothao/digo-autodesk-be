@@ -7,10 +7,10 @@ let app = express();
 // app.use(express.static("wwwroot"));
 app.use(
   cors({
-    origin: ["*"],
-    credentials: true,
+    origin: ["http://localhost:5173","https://iot.digotech.net/"],
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
-    preflightContinue: true
+    preflightContinue: true,
+    optionsSuccessStatus: 200
   })
 );
 app.use(express.json());
