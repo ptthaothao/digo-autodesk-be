@@ -7,7 +7,7 @@ let app = express();
 // app.use(express.static("wwwroot"));
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://iot.digotech.net/"],
+    origin: ["http://localhost:5173","https://iot.digotech.net/","https://iot.digotech.net","http://iot.digotech.net"],
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     preflightContinue: true,
     optionsSuccessStatus: 200
